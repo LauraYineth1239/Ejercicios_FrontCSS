@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
     <title>Header</title>
 </head>
 <style>
     body{
         margin: 0px;
+        font-family: 'Mulish', sans-serif;
         background-color: #ab88ff;
     }
     .header{
@@ -16,6 +18,10 @@
         width: 100%;
         /* Valor absoluto */
         height: 80px;
+        /* alinear item con flex */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .header__img {
         width: 200px;
@@ -27,7 +33,7 @@
     }
     .header__menu ul{
         /* este esconde el menu el contenido de ul */
-        /* display: none;  */
+        display: none;
         list-style: none;
         padding: 0px;
         position: absolute;
@@ -35,9 +41,35 @@
         text-align: right;
         margin: 0px 0px 0px -14px;
     }
+/*  Es una psudoclase en cual solo es cuando pasamos por encima de
+    un elemento ul se une con el display del header__menu ul
+    haciendo que no se vea hasta que pasemos por encima de el */
+    .header__menu:hover ul, ul:hover{
+        display: block;
+    }
     .header__menu--profile{
         margin-right: 8px;
+        display: flex;
+        align-items: center;
+    }
+    .header__menu li{
+        /* de margin solo modifica top-bottom y right-left */
+        margin: 10px 0px;
+    }
+    .header__menu li a{
+        color: white;
+        /* Elimina el subrayado que lo identifica como un link */
+        text-decoration: none;
+    }
+    .header__menu li a:hover{
+        text-decoration: underline;
+    }
+    .header__menu--profile img {
+        margin-right: 8px;
         width: 40px;
+    }
+    .header__menu--profile p{
+        margin: 0px;
     }
 </style>
 <body>
