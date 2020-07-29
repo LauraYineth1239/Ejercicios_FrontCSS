@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Toma la primera p - primer hijo del elemento */
+    /* p:first-child{ 
+        color: pink;
+    } */
+    /* Modifica la ultima p - ultimo hijo del elemento */
+    /* p:last-child{
+        color: brown;
+    } */
+    /* pseudoclases donde n- es un numero cualquiera y th- correspode a la representacion de numeros formales 1th 2th pero en ingles */
+    /* 2n es cualquier numero par de los elementos
+       2n+1 es cualquier numero impar de los elementos
+    los elementos de cuentan desde 0 como una lista */
+    /* p:nth-child(2n){
+        color: red;
+    }
+    p:nth-child(2n+1){
+        color: blue;
+    } */
+    /* Toma la primera letra del elemento p y la modifica segun lo que le hayamos establecido */
+    p::first-letter{
+        color: blueviolet;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <p>Conejo</p>
+    <p>🐶 Perro</p>
+    <p>🐮 Vaca</p>
+    <p>🐸 Sapo</p>
+</body>
+</html>
