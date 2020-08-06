@@ -1,3 +1,3 @@
-# my_firts_repo
+# Ejercicios Front - CSS
 
-Hola soy laura
+Bienvenidos Estrellitas 
