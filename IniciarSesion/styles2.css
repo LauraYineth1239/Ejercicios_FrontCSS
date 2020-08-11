@@ -4,7 +4,7 @@ body {
 }
 header {
   align-items: center;
-  background-color: #21c08b;
+  background-color: #252422;
   display: flex;
   height: 100px;
   justify-content: space-between;
@@ -15,9 +15,9 @@ header {
   margin-left: 30px;
   width: 200px;
 }
-.Login{
+.registrar{
   /* Queda un vacio por que hay un padding en el h2 */
-  background: linear-gradient(#21C088, #AB88FF);
+  background: linear-gradient(#252422, #403d39); 
   display: flex;
   align-items: center;
   justify-content: center; /*alinear de forma horizontal */
@@ -27,8 +27,9 @@ header {
   /* Por mas grande que sea nuestro alto en la pantalla siempre va a tener el valor de min-height */
   min-height: calc(100vh - 200px);
 }
-.login__container{
+.registrar__container{
   /* degradiente de blanco con opacidad  */
+  background: url(../IniciarSesion/Asset/Paisaje.jpg)center bottom;
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
   border-radius: 40px;
@@ -40,48 +41,19 @@ header {
   justify-content: space-around;
   flex-direction: column;
 }
-.login__container--form{
+.registrar__container--form{
   display: flex;
   flex-direction: column;
 }
-.login__container--form label{
-  font-size: 14px;
-}
-.login__container--remember-me{
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-.login__container--remember-me a{
-  color: white;
-  font-size: 14px;
-  text-decoration: none;
-}
-.login__container--remember-me a:hover{
-  text-decoration: underline;
-}
-.login__container--social-media > div{
+.registrar__container--social-media > div{
   display: flex;
   align-items: center;
   font-size: 14px;
   margin-bottom: 10px;
 }
-.login__container--social-media > div >img{
+.registrar__container--social-media > div >img{
   width: 30px;
   margin-right: 10px;
-}
-.login__container--register{
-  font-size:14px;
-}
-.login__container--register a{
-  color:white;
-  font-weight: bold;
-  font-size:16px;
-  text-decoration: none;
-}
-.login__container--register a:hover{
-  text-decoration: underline;
 }
 .input{
   background-color: transparent;
@@ -97,7 +69,7 @@ header {
   height: 50px;
 }
 ::placeholder{
-  color: white;
+  color:white;
 }
 .button{
   background-color: rgba(255, 255, 255, 0.1);
@@ -113,7 +85,7 @@ header {
   margin: 10px 0px;
 }
 .footer{
-  background-color: #AB88FF;
+  background-color: #403d39;
   display: flex;
   align-items: center;
   height: 100px;
@@ -129,12 +101,3 @@ header {
 .footer a:hover{
   text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
