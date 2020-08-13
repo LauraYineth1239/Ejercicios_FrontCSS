@@ -1,8 +1,7 @@
 body {
   margin: 0;
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
 }
-
 header {
   align-items: center;
   background-color: #21c08b;
@@ -12,27 +11,23 @@ header {
   top: 0px;
   width: 100%;
 }
-
 .header__img {
   margin-left: 30px;
   width: 200px;
 }
-
-.Login {
+.Login{
   /* Queda un vacio por que hay un padding en el h2 */
   background: linear-gradient(#21C088, #AB88FF);
   display: flex;
   align-items: center;
-  justify-content: center;
-  /*alinear de forma horizontal */
+  justify-content: center; /*alinear de forma horizontal */
   /* Todos los elementos se ubiquen de arriba hacia abajo */
   flex-direction: column;
   padding: 0px 30px;
   /* Por mas grande que sea nuestro alto en la pantalla siempre va a tener el valor de min-height */
   min-height: calc(100vh - 200px);
 }
-
-.login__container {
+.login__container{
   /* degradiente de blanco con opacidad  */
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
@@ -45,79 +40,66 @@ header {
   justify-content: space-around;
   flex-direction: column;
 }
-
-.login__container--form {
+.login__container--form{
   display: flex;
   flex-direction: column;
 }
-
-.login__container--form label {
+.login__container--form label{
   font-size: 14px;
 }
-
-.login__container--remember-me {
+.login__container--remember-me{
   color: white;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
-
-.login__container--remember-me a {
+.login__container--remember-me a{
   color: white;
   font-size: 14px;
   text-decoration: none;
 }
-
-.login__container--remember-me a:hover {
+.login__container--remember-me a:hover{
   text-decoration: underline;
 }
-
-.login__container--social-media > div {
+.login__container--social-media > div{
   display: flex;
   align-items: center;
   font-size: 14px;
   margin-bottom: 10px;
 }
-
-.login__container--social-media > div > img {
+.login__container--social-media > div >img{
   width: 30px;
   margin-right: 10px;
 }
-
-.login__container--register {
-  font-size: 14px;
+.login__container--register{
+  font-size:14px;
 }
-
-.login__container--register a {
-  color: white;
+.login__container--register a{
+  color:white;
   font-weight: bold;
-  font-size: 16px;
+  font-size:16px;
   text-decoration: none;
 }
-
-.login__container--register a:hover {
+.login__container--register a:hover{
   text-decoration: underline;
 }
-
-.input {
+.input{
   background-color: transparent;
   border-left: 0px;
   border-top: 0px;
   border-right: 0px;
   border-bottom: 2px solid white;
   font-size: 16px;
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   margin-bottom: 20px;
   padding: 0px 20px;
   outline: none;
   height: 50px;
 }
-
-::placeholder {
+::placeholder{
   color: white;
 }
-
-.button {
+.button{
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   border-radius: 25px;
@@ -125,45 +107,46 @@ header {
   /* es importante gracias a el puede oprimir el boton */
   cursor: pointer;
   font-size: 16px;
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   height: 50px;
   letter-spacing: 1px;
   margin: 10px 0px;
 }
-
-.footer {
+.footer{
   background-color: #AB88FF;
   display: flex;
   align-items: center;
   height: 100px;
   width: 100%;
 }
-
-.footer a {
+.footer a{
   color: white;
   cursor: pointer;
   font-size: 14px;
   padding-left: 30px;
   text-decoration: none;
 }
-
-.footer a:hover {
+.footer a:hover{
   text-decoration: underline;
 }
-
 /* esto es una media query para hacer responsive la pagina web */
-@media only screen and (max-width: 600px) {
-  .login__container {
+@media only screen and (max-width: 600px){
+  .login__container{
     background-color: transparent;
     border: none;
     padding: 0px;
     width: 100%;
   }
-
-  .footer {
+  .footer{
     align-items: flex-start;
     flex-direction: column;
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+
+
+
+
+
+
+
