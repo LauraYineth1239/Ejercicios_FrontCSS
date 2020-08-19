@@ -1,0 +1,51 @@
+/* por defecto toman el alto disponible display:flex */
+/* Buena practica es resetear todas las propiedades base */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+    font-size: 16px;
+}
+/* el body termina en el ultimo item */
+.header{
+    outline: 1px solid hotpink;
+    height: 4rem;
+}
+/* esto es un flex-item y un flex-container */
+.container{
+    display: flex;
+    height: inherit;
+}
+.content{
+    outline: 1px solid aqua;
+    flex: 1;
+}
+.aside{
+    outline: 1px solid darkred;
+    flex: 0 0 25%;
+}
+.menu{
+    display: flex;
+}
+.menu-items{
+    list-style: none;
+    flex: 1;
+    outline: 1px solid salmon;
+    line-height: 3rem;
+    text-align: center;
+    transition: flex .5s;
+}
+.menu-items:hover{
+    flex:8;
+}
+.footer{
+    /* divide el elemento pero no ocupa espacio */
+    outline: 1px solid mediumvioletred;
+    height: 6rem;
+    margin-top: auto;
+}
